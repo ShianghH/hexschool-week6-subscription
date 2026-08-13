@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>訂閱成功｜AI ToolVerse</title>
+    <%- include('./layout/aos-css'); -%>
   </head>
   <body class="min-vh-100 d-flex flex-column">
     <div class="subscription-page-bg flex-grow-1">
@@ -15,6 +16,7 @@
             <div class="col-12 col-lg-6">
               <section
                 class="d-flex flex-column justify-content-center align-items-center"
+                data-aos="fade-down"
               >
                 <!-- 勾勾icon -->
                 <div
@@ -29,7 +31,11 @@
                 </p>
               </section>
               <!-- 訂閱資訊 -->
-              <section class="subscription-info rounded-md p-5 mb-4">
+              <section
+                class="subscription-info rounded-md p-5 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <h2 class="fs-6 fw-bold mb-4">訂閱資訊</h2>
                 <dl class="subscription-details mb-4">
                   <div class="d-flex mb-2">
@@ -68,6 +74,8 @@
               </section>
               <section
                 class="getting-started rounded-md p-5 border border-purple-100"
+                data-aos="fade-up"
+                data-aos-delay="200"
               >
                 <h2 class="fs-6 fw-bold mb-4">開始使用 WriteCraft AI</h2>
                 <ul>
@@ -83,7 +91,7 @@
         </div>
       </main>
     </div>
-    <%- include('./layout/footer'); -%>
+    <%- include('./layout/footer'); -%> <%- include('./layout/aos-js'); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
