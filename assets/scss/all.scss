@@ -1,0 +1,20 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+// Bootstrap 函式必須先載入
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 自訂 Bootstrap 變數
+@import "./helpers/variables";
+
+// Bootstrap 本體
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// 全域樣式
+@import "./base/base";
+
+//自己的樣式
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/index";
+@import "./pages/pricing";

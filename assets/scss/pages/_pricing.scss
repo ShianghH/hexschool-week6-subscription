@@ -1,0 +1,16 @@
+.pricing-card {
+  color: $white;
+  background-color: $transparent-100;
+  border: 1px solid $transparent-200;
+  backdrop-filter: blur(24px);
+}
+.pricing-card-featured {
+  border-color: $brand-purple-100;
+}
+.plan-label {
+  background-color: $transparent-100;
+  backdrop-filter: blur(24px);
+}
+.plan-card-body {
+  padding-bottom: 28px;
+}

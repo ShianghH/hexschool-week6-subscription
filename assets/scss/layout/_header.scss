@@ -1,0 +1,47 @@
+.header-inner {
+  min-height: 64px;
+}
+.logo {
+  max-width: 152px;
+}
+.dropdown-menu,
+.mobile-menu {
+  background-color: $transparent-100;
+  border: 1px solid $transparent-200;
+  backdrop-filter: blur(24px);
+}
+
+.mobile-search {
+  background-color: $transparent-100;
+  border: 1px solid $transparent-200;
+  backdrop-filter: blur(24px);
+}
+.mobile-search.collapsing {
+  transition: none;
+}
+.mobile-menu {
+  --bs-offcanvas-width: 300px;
+  max-width: 100%;
+}
+.mobile-menu-link {
+  border-radius: $border-radius-lg;
+  &:hover {
+    background-color: $transparent-100;
+  }
+}
+
+.offcanvas-title {
+  border-bottom: 1px solid $transparent-200;
+}
+
+.desktop-search {
+  width: 100%;
+  max-width: 300px;
+}
+.dropdown-menu {
+  min-width: 240px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}

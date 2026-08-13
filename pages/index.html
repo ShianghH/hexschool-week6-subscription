@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂閱成功｜AI ToolVerse</title>
+  </head>
+  <body class="min-vh-100 d-flex flex-column">
+    <div class="subscription-page-bg flex-grow-1">
+      <%- include('./layout/header'); -%>
+      <main class="py-6 py-lg-7">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+              <section
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <!-- 勾勾icon -->
+                <div
+                  class="success-icon bg-success-100 rounded-circle d-flex align-items-center justify-content-center fs-5 mb-4"
+                >
+                  <i class="bi bi-check2 text-success-300"></i>
+                </div>
+                <h1 class="fs-3 fw-bold mb-3">訂閱成功！</h1>
+                <p class="text-neutral-200 text-center mb-5">
+                  你已成功訂閱 WriteCraft
+                  AI，現在可以開始使用這個工具來提升你的工作效率
+                </p>
+              </section>
+              <!-- 訂閱資訊 -->
+              <section class="subscription-info rounded-md p-5 mb-4">
+                <h2 class="fs-6 fw-bold mb-4">訂閱資訊</h2>
+                <dl class="subscription-details mb-4">
+                  <div class="d-flex mb-2">
+                    <dt class="text-neutral-200 fw-normal">工具名稱</dt>
+                    <dd class="mb-0 ms-4">WriteCraft AI</dd>
+                  </div>
+                  <div class="d-flex mb-2">
+                    <dt class="text-neutral-200 fw-normal">訂閱方案</dt>
+                    <dd class="mb-0 ms-4">進階方案</dd>
+                  </div>
+                  <div class="d-flex mb-2">
+                    <dt class="text-neutral-200 fw-normal">付款週期</dt>
+                    <dd class="mb-0 ms-4">月繳</dd>
+                  </div>
+                  <div class="d-flex mb-2">
+                    <dt class="text-neutral-200 fw-normal">付款方式</dt>
+                    <dd class="mb-0 ms-4">信用卡付款</dd>
+                  </div>
+                  <div class="d-flex mb-2">
+                    <dt class="text-neutral-200 fw-normal">開始日期</dt>
+                    <dd class="mb-0 ms-4">2026 / 04 / 15</dd>
+                  </div>
+                  <div class="d-flex mb-2">
+                    <dt class="text-neutral-200 fw-normal">下次扣款日期</dt>
+                    <dd class="mb-0 ms-4">2026 / 05 / 15</dd>
+                  </div>
+                </dl>
+                <div
+                  class="subscription-notice py-2 px-3 text-neutral-200 d-flex gap-2 rounded-3 align-items-center"
+                >
+                  <i class="bi bi-info-circle flex-shrink-0"></i
+                  ><span class="fs-7"
+                    >你可以隨時在會員中心查看或管理訂閱資訊</span
+                  >
+                </div>
+              </section>
+              <section
+                class="getting-started rounded-md p-5 border border-purple-100"
+              >
+                <h2 class="fs-6 fw-bold mb-4">開始使用 WriteCraft AI</h2>
+                <ul>
+                  <li class="mb-2">下載工具後即可開始使用</li>
+                  <li>若有任何使用問題，請查看工具說明或聯絡支援團隊</li>
+                </ul>
+                <a href="#" class="btn btn-purple-100 rounded-pill w-100 mt-5"
+                  >立即下載</a
+                >
+              </section>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

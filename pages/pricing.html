@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂閱方案｜AI ToolVerse</title>
+  </head>
+  <body class="min-vh-100 d-flex flex-column">
+    <div class="subscription-page-bg flex-grow-1">
+      <%- include('./layout/header'); -%>
+      <main class="py-6 py-lg-7">
+        <div class="container">
+          <a
+            href="index.html"
+            class="link-light text-decoration-none d-flex align-items-center mb-5"
+          >
+            <i class="bi bi-chevron-left me-2 fs-6"></i>
+            返回上頁
+          </a>
+          <section class="text-center">
+            <h1 class="fs-3 fw-bold mb-2 mb-lg-3">選擇適合你的方案</h1>
+            <p class="text-neutral-200 mb-4 mb-lg-5">
+              訂閱 WriteCraft AI，開始使用 AI 協助你撰寫文章、社群內容與行銷文案
+            </p>
+            <!-- 月繳年繳按鈕 -->
+            <ul
+              class="nav justify-content-center gap-3 mb-4 mb-lg-5"
+              role="tablist"
+            >
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-outline-purple-100 rounded-pill px-5 active"
+                  id="monthly-tab"
+                  aria-controls="monthly-plans"
+                  data-bs-toggle="tab"
+                  data-bs-target="#monthly-plans"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  月繳
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-outline-purple-100 rounded-pill px-5"
+                  id="yearly-tab"
+                  aria-controls="yearly-plans"
+                  data-bs-toggle="tab"
+                  data-bs-target="#yearly-plans"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  年繳
+                </button>
+              </li>
+            </ul>
+            <!-- 方案卡片 -->
+            <div class="tab-content text-start">
+              <!-- 月繳 -->
+              <div
+                class="tab-pane fade show active"
+                id="monthly-plans"
+                aria-labelledby="monthly-tab"
+                role="tabpanel"
+              >
+                <div class="row gy-5 gx-lg-5">
+                  <div class="col-12 col-lg-4">
+                    <article class="card h-100 pricing-card rounded-md">
+                      <div
+                        class="card-body d-flex flex-column px-5 pt-5 plan-card-body"
+                      >
+                        <h2
+                          class="fs-7 py-1 px-2 plan-label rounded-3 mb-4 align-self-start"
+                        >
+                          免費方案
+                        </h2>
+                        <p class="card-title fs-3 fw-bold mb-4">
+                          NT$0 <span class="ms-2 fs-6 fw-normal">/ 月</span>
+                        </p>
+                        <p class="text-neutral-200 mb-4">
+                          適合剛開始嘗試 AI
+                          寫作工具的使用者，用來快速產生靈感、簡短內容或社群貼文
+                        </p>
+                        <ul class="list-unstyled mb-5">
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            每月 20 次 AI 生成
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i> 基本 Prompt 模板
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            短內容生成（社群貼文、簡短文案）
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            基礎 AI 優化建議
+                          </li>
+                          <li
+                            class="mb-2 text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            長文章生成
+                          </li>
+
+                          <li
+                            class="mb-2 text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            多語言寫作支援
+                          </li>
+                          <li
+                            class="mb-2 text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            進階寫作模板
+                          </li>
+                          <li
+                            class="text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            團隊成員共享工作區
+                          </li>
+                        </ul>
+                        <button
+                          class="btn btn-outline-purple-100 rounded-pill w-100 py-2 mt-auto"
+                          type="button"
+                        >
+                          我要訂閱
+                        </button>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <article
+                      class="card h-100 pricing-card pricing-card-featured rounded-md"
+                    >
+                      <div
+                        class="card-body d-flex flex-column px-5 pt-5 plan-card-body"
+                      >
+                        <h2
+                          class="fs-7 py-1 px-2 plan-label rounded-3 mb-4 align-self-start"
+                        >
+                          基礎方案
+                        </h2>
+                        <p class="card-title fs-3 fw-bold mb-4 text-purple-200">
+                          NT$300
+                          <span class="ms-2 fs-6 fw-normal text-white"
+                            >/ 月</span
+                          >
+                        </p>
+                        <p class="text-neutral-200 mb-4">
+                          適合經常需要撰寫內容的創作者、行銷人員與自由工作者
+                        </p>
+                        <ul class="list-unstyled mb-5">
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            每月 20 次 AI 生成
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i> 基本 Prompt 模板
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            短內容生成（社群貼文、簡短文案）
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            基礎 AI 優化建議
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            長文章生成
+                          </li>
+
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            多語言寫作支援
+                          </li>
+                          <li
+                            class="mb-2 text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            進階寫作模板
+                          </li>
+                          <li
+                            class="text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            團隊成員共享工作區
+                          </li>
+                        </ul>
+                        <button
+                          class="btn btn-purple-100 rounded-pill w-100 py-2 mt-auto"
+                          type="button"
+                        >
+                          我要訂閱
+                        </button>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <article class="card h-100 pricing-card rounded-md">
+                      <div
+                        class="card-body d-flex flex-column px-5 pt-5 plan-card-body"
+                      >
+                        <h2
+                          class="fs-7 py-1 px-2 plan-label rounded-3 mb-4 align-self-start"
+                        >
+                          進階方案
+                        </h2>
+                        <p class="card-title fs-3 fw-bold mb-4">
+                          NT$800 <span class="ms-2 fs-6 fw-normal">/ 月</span>
+                        </p>
+                        <p class="text-neutral-200 mb-4">
+                          適合團隊或需要大量生成內容的專業使用者
+                        </p>
+                        <ul class="list-unstyled mb-5">
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            每月 20 次 AI 生成
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i> 基本 Prompt 模板
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            短內容生成（社群貼文、簡短文案）
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            基礎 AI 優化建議
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            長文章生成
+                          </li>
+
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            多語言寫作支援
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            進階寫作模板
+                          </li>
+                          <li class="d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            團隊成員共享工作區
+                          </li>
+                        </ul>
+                        <button
+                          class="btn btn-outline-purple-100 rounded-pill w-100 py-2 mt-auto"
+                          type="button"
+                        >
+                          我要訂閱
+                        </button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <!-- 年繳 -->
+              <div
+                class="tab-pane fade"
+                id="yearly-plans"
+                aria-labelledby="yearly-tab"
+                tabindex="0"
+                role="tabpanel"
+              >
+                <div class="row gy-5 gx-lg-5">
+                  <div class="col-12 col-lg-4">
+                    <article class="card h-100 pricing-card rounded-md">
+                      <div
+                        class="card-body d-flex flex-column px-5 pt-5 plan-card-body"
+                      >
+                        <h2
+                          class="fs-7 py-1 px-2 plan-label rounded-3 mb-4 align-self-start"
+                        >
+                          免費方案
+                        </h2>
+                        <p class="card-title fs-3 fw-bold mb-4">
+                          NT$0 <span class="ms-2 fs-6 fw-normal">/ 年</span>
+                        </p>
+                        <p class="text-neutral-200 mb-4">
+                          適合剛開始嘗試 AI
+                          寫作工具的使用者，用來快速產生靈感、簡短內容或社群貼文
+                        </p>
+                        <ul class="list-unstyled mb-5">
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            每月 20 次 AI 生成
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i> 基本 Prompt 模板
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            短內容生成（社群貼文、簡短文案）
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            基礎 AI 優化建議
+                          </li>
+                          <li
+                            class="mb-2 text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            長文章生成
+                          </li>
+
+                          <li
+                            class="mb-2 text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            多語言寫作支援
+                          </li>
+                          <li
+                            class="mb-2 text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            進階寫作模板
+                          </li>
+                          <li
+                            class="text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            團隊成員共享工作區
+                          </li>
+                        </ul>
+                        <button
+                          class="btn btn-outline-purple-100 rounded-pill w-100 py-2 mt-auto"
+                          type="button"
+                        >
+                          我要訂閱
+                        </button>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <article
+                      class="card h-100 pricing-card pricing-card-featured rounded-md"
+                    >
+                      <div
+                        class="card-body d-flex flex-column px-5 pt-5 plan-card-body"
+                      >
+                        <h2
+                          class="fs-7 py-1 px-2 plan-label rounded-3 mb-4 align-self-start"
+                        >
+                          基礎方案
+                        </h2>
+                        <p class="card-title fs-3 fw-bold mb-4 text-purple-200">
+                          NT$1,200
+                          <span class="ms-2 fs-6 fw-normal text-white"
+                            >/ 年</span
+                          >
+                        </p>
+                        <p class="text-neutral-200 mb-4">
+                          適合經常需要撰寫內容的創作者、行銷人員與自由工作者
+                        </p>
+                        <ul class="list-unstyled mb-5">
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            每月 20 次 AI 生成
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i> 基本 Prompt 模板
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            短內容生成（社群貼文、簡短文案）
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            基礎 AI 優化建議
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            長文章生成
+                          </li>
+
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            多語言寫作支援
+                          </li>
+                          <li
+                            class="mb-2 text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            進階寫作模板
+                          </li>
+                          <li
+                            class="text-neutral-200 opacity-30 d-flex gap-2 align-items-center"
+                          >
+                            <i class="bi bi-x"></i>
+                            團隊成員共享工作區
+                          </li>
+                        </ul>
+                        <button
+                          class="btn btn-purple-100 rounded-pill w-100 py-2 mt-auto"
+                          type="button"
+                        >
+                          我要訂閱
+                        </button>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <article class="card h-100 pricing-card rounded-md">
+                      <div
+                        class="card-body d-flex flex-column px-5 pt-5 plan-card-body"
+                      >
+                        <h2
+                          class="fs-7 py-1 px-2 plan-label rounded-3 mb-4 align-self-start"
+                        >
+                          進階方案
+                        </h2>
+                        <p class="card-title fs-3 fw-bold mb-4">
+                          NT$2,400 <span class="ms-2 fs-6 fw-normal">/ 年</span>
+                        </p>
+                        <p class="text-neutral-200 mb-4">
+                          適合團隊或需要大量生成內容的專業使用者
+                        </p>
+                        <ul class="list-unstyled mb-5">
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            每月 20 次 AI 生成
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i> 基本 Prompt 模板
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            短內容生成（社群貼文、簡短文案）
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            基礎 AI 優化建議
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            長文章生成
+                          </li>
+
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            多語言寫作支援
+                          </li>
+                          <li class="mb-2 d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            進階寫作模板
+                          </li>
+                          <li class="d-flex gap-2 align-items-center">
+                            <i class="bi bi-check2"></i>
+                            團隊成員共享工作區
+                          </li>
+                        </ul>
+                        <button
+                          class="btn btn-outline-purple-100 rounded-pill w-100 py-2 mt-auto"
+                          type="button"
+                        >
+                          我要訂閱
+                        </button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

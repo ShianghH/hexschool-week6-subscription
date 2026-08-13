@@ -1,0 +1,27 @@
+.subscription-page-bg {
+  background-image: url(../images/subscription-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+// 圈圈
+.success-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.subscription-info,
+.getting-started {
+  background-color: $transparent-100;
+  backdrop-filter: blur(24px);
+}
+
+.subscription-details {
+  dt {
+    flex: 0 0 100px;
+  }
+}
+.subscription-notice {
+  background-color: $transparent-100;
+}
